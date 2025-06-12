@@ -103,7 +103,7 @@
   <img src="https://i.imgur.com/WzaQvTL.png" alt="Logo" style="width: 45px; height: auto;">
   <h1 style="font-size: 32px; margin: 0;">Checklist de Rotina - Analista de Cobrança e Cadastro</h1>
 </div>
-<h5>FIN-CKL-001-TPH Rev:01</h5>
+<h5>FIN-CKL-001-TPH Rev:02</h5>
 <!-- Formulário de informações iniciais -->
 <div class="form-container" style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
   <div style="flex: 2;">
@@ -156,18 +156,20 @@
           ["08h00 - 10h30", "Fazer a liberação de pedidos","FIN-POP-009-TPH","SICF","Acionar Coordenador ADM"],
           ["10h30 - 11h00", "Fazer a atualização cadastral","-","SICF","Acionar Coordenador ADM"],
           ["11h00 - 12h00", "Realizar o cadastro","-","SICF", "Acionar Coordenador ADM"],
-          ["Diariamente", "Realizar a cobrança de 0 a 05 dias","-","SICF", "Acionar Coordenador ADM"],
+          ["Diariamente", "Realizar a cobrança de 6 a 15 dias","-","SICF", "Acionar Coordenador ADM"],
           ["Diariamente", "Fazer a atualização clientes Sefaz ","-","SICF", "Acionar Coordenador ADM"],
           ["Diariamente", "Realizar a inclusão de clientes na base","-","SICF", "Acionar Coordenador ADM"],
-          ["Diariamente", "Fazer a analise de crédito para cadastros novos","FIN-POP-007-TPH","SICF/ Crediton", "Acionar Coordenador ADM"],
+          ["Diariamente", "Fazer a analise de crédito para cadastros novos","FIN-POP-007-TPH","SICF/Crediton", "Acionar Coordenador ADM"],
           ["Diariamente", "Realizar a prorrogação de Boleto","-", "SICF/Banco", "Acionar Coordenador ADM"],
+          ["Diariamente", "Analisar o Mov C","-", "Site", "Acionar Coordenador ADM"],
           ["Todo dia 10 do mês", "Fazer o Aceite Arquivei","-", "Site", "Acionar Coordenador ADM"],
           ["Quinzenal", "Fazer a mudança portador 155","-", "SICF", "Acionar Coordenador ADM"],
           ["Semanal", "Fazer a adequação de carteira","-", "SICF", "Acionar Coordenador ADM"],
+          ["Mensal", "Salvar os comprovantes dos contratos","-", "Banco", "Acionar Coordenador ADM"],
           ["Conforme Demanda", "Fazer o atendimento ao cliente","-", "Telefone", "Acionar Coordenador ADM"],
           ["Conforme Demanda", "Fazer o atendimento ao representante","-", "Telefone", "Acionar Coordenador ADM"],
           ["Conforme Demanda", "Fazer as reativações","-", "SICF", "Acionar Coordenador ADM"],
-
+          
         ];
 
         for (let i = 0; i < atividades.length; i++) {
@@ -257,7 +259,7 @@
     formData.append("data", data);
     formData.append("unidade", unidade);
 
-    fetch("https://script.google.com/macros/s/AKfycbxpPOuYNbriHLIcflzi0S9lKKRnl-PqHlficFpestARPynJsbPcO-ogIz37tPcdMb67sg/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbxzU2g-qMzwimBiSaJQNndCEJppKqzjyB6-0QZ_2vML-tw_icddwr9izLmvDmZ4sCTQ7A/exec", {
       method: "POST",
       body: formData
     })
